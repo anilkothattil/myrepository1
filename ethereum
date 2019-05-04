@@ -1,0 +1,82 @@
+d55c6d2b541ba93afc74b3270e019372660647f6
+
+
+sudo apt-get install software-properties-common
+sudo add-apt-repository -y ppa:ethereum/ethereum
+sudo apt-get update
+sudo apt-get install ethereum
+
+#account creation 
+geth account new
+
+#creation of demo network
+ sudo npm install -g ethereumjs-testrpc
+ 
+ #run
+ testrpc
+ 0x53d277eebfc53d9a78bb354aa64b665fc6c48331
+ Available Accounts
+==================
+(0) 0x308bc46e2902251a30bb91fb0a0862492947ce6b
+(1) 0xdeec9c734cccd1aa278c74fa92893f7300438171
+(2) 0x383dbe90b1b33e852d079c9b4d0149f41a8baeaa
+(3) 0x87aa404625b8e0a0b6b64a0754063ba3cd443367
+(4) 0xd9941d6e81a43da3455d7e7b0562c337c0519c9f
+(5) 0x3ab3f55db2c2ae89822a9bd94764f2033e0931c4
+(6) 0xf05250e09d6ff42a6f0a1c2d48f027b05b34803a
+(7) 0xa81d7b6bd72f72b12aa66f009daea330f313a23d
+(8) 0xfa8331873790d89f32483f2c1d0b1f1267e5a09e
+(9) 0x108f7b88c8ef695cf5098214f33d459f067efb52
+
+Private Keys
+==================
+(0) 53edac38923595bed519e36725486f231d4d4b9bf8b27fda260a9a45f48cb9b0
+(1) 245cec576a2572ec3f75d86b7fc68193e63ff1efb4ea4a0939140fffa622b820
+(2) 55281e9a9348a1b6093cbf8575cc1bbf6a54f83494d4a99345d26ce229ea8a43
+(3) e1de631411055c0ca01aa8646649e68c35dc95d6c3a196033fe756d105f66461
+(4) ffa13768643fc7e542407247c51d436f3bf6cf826258d52f0fd5db14782eb2c0
+(5) e42eb25b83b0fc879d527d183b8e830d28647174235c933ed326a5186cbb8ae9
+(6) 4c80d634e5a4008788059ef68168b70acb7e1b12b186a213570b0b82a868035c
+(7) 8e4d94be6cde4ac721426c8ea32faa0d2e241a7dbe3cff8cf906716cf0419401
+(8) 5450432b299fe5ba3eaf583db1e2b7e8291af930771a75aeb8bf527e551511bf
+(9) 5dae13cd36ae39dcc408f38f10b831385b84e0eea3d948f712e298122d5e262d
+
+#create genesis block
+genesis.json
+
+{
+"config": {},
+"gasLimit": "2000000",
+"difficulty": "10",
+"alloc": {}
+}
+
+#plugin
+metamask
+
+
+#secert code of metamask of kothubali
+science feel usage cloud tube educate solution purse van announce edit side
+
+#initialize genesis
+geth init genesis.json --datadir key
+
+anil@anil-pc:~/anil-block$ geth --datadir key --networkid 134 console 2>eth.log
+Welcome to the Geth JavaScript console!
+
+instance: Geth/v1.8.23-stable-c9427004/linux-amd64/go1.10.4
+ modules: admin:1.0 debug:1.0 eth:1.0 ethash:1.0 miner:1.0 net:1.0 personal:1.0 rpc:1.0 txpool:1.0 web3:1.0
+
+#Create new account
+> personal.newAccount("12345")
+"0xb79049476cb26dbf58b514b66f2d0983d0e21d69"
+
+tail -f eth.log
+
+
+
+
+
+
+
+
